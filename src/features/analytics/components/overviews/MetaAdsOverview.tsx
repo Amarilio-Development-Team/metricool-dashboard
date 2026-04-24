@@ -98,7 +98,7 @@ export const MetaAdsOverview = ({ from, to }: Props) => {
       {/* 4. SECCIÓN: DESGLOSE POR CAMPAÑAS */}
       <div className="flex flex-col gap-6">
         <h2 className="text-medium text-2xl font-bold lg:text-3xl">
-          Listado de <span className="text-primary">Campañas</span>
+          Listado de tus <span className="text-primary">Campañas</span>
         </h2>
         <Suspense key={`meta-campaigns-${suspenseKey}`} fallback={<div className="h-[300px] w-full animate-pulse rounded-xl bg-gray-100 dark:bg-gray-800" />}>
           <MetaAdsCampaignsTable from={from} to={to} />
